@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Load the saved model with error handling
-model_path = 'D:\crop\recoomender\LogisticRegresion.pkl'
+model_path = 'recommender_model/LogisticRegresion.pkl'
 if os.path.exists(model_path):
     try:
         LogReg = pickle.load(open(model_path, 'rb'))
